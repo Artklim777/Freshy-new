@@ -1,0 +1,23 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.wrapper {
+  overflow: hidden;
+  position: relative; }
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px; }

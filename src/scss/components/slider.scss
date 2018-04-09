@@ -1,4 +1,5 @@
-       .slider-header{
+@import 'variables.scss';
+        .slider-header{
 display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,7 +32,7 @@ display: flex;
                     font-family: 'icomoon' !important;
                     line-height: 1;
                     font-weight: normal;
-                    content: '\e902';
+                    content: '\e900';
                     position: absolute;
                     top: 40%;
                     right: -125px;

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.button {
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  background: #00a1eb; }
+  .button-up {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 111px;
+    right: 29px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    z-index: 100;
+    outline-color: transparent;
+    border-radius: 5px; }
+    .button-up-icon {
+      /* Для Firefox */
+      /* Для IE */
+      -webkit-transform: rotate(-90deg);
+      /* Для Safari, Chrome, iOS */
+      /* Для Opera */
+      transform: rotate(-90deg); }
+  .button:hover {
+    color: #fff; }
+  .button_extra-small {
+    margin-left: 13px;
+    border-radius: 3px; }
+  .button__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 65px 0 92px; }
+    @media screen and (max-width: 768px) {
+      .button__center {
+        padding: 35px 0 32px; } }
+  .button_white {
+    background-color: #fff;
+    color: #00a1eb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.01px;
+    text-transform: uppercase;
+    padding: 17px 25px;
+    cursor: pointer; }
+    .button_white:hover {
+      color: #737373; }
+  .button-card {
+    position: absolute;
+    top: 175px;
+    left: 26%;
+    cursor: pointer; }
+    .button-card:hover {
+      color: #00a1eb; }

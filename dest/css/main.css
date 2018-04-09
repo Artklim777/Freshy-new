@@ -465,16 +465,15 @@ a {
     outline-color: transparent;
     border-radius: 5px; }
     .button-up-icon {
-      margin-left: -5px;
-      -moz-transform: rotate(90deg);
+      -moz-transform: rotate(-90deg);
       /* Для Firefox */
-      -ms-transform: rotate(90deg);
+      -ms-transform: rotate(-90deg);
       /* Для IE */
-      -webkit-transform: rotate(90deg);
+      -webkit-transform: rotate(-90deg);
       /* Для Safari, Chrome, iOS */
-      -o-transform: rotate(90deg);
+      -o-transform: rotate(-90deg);
       /* Для Opera */
-      transform: rotate(90deg); }
+      transform: rotate(-90deg); }
   .button:hover {
     color: #fff; }
   .button_extra-small {
@@ -675,13 +674,13 @@ textarea.form-control {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-arrow-l:before {
+.icon-keyboard-arrow-right:before {
+  content: "\e900"; }
+
+.icon-keyboard_arrow_left:before {
   content: "\e901"; }
 
 .icon-ribko:before {
-  content: "\e900"; }
-
-.icon-arrow-r:before {
   content: "\e902"; }
 
 .icon-skavorodko:before {
@@ -720,7 +719,7 @@ textarea.form-control {
       font-family: 'icomoon' !important;
       line-height: 1;
       font-weight: normal;
-      content: '\e902';
+      content: '\e900';
       position: absolute;
       top: 40%;
       right: -125px;

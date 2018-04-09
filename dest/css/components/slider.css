@@ -1,0 +1,182 @@
+.slider-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.slider {
+  max-height: 270px;
+  padding: 15px 0; }
+  .slider .slick-slide {
+    min-width: 270px; }
+  .slider .slick-list {
+    max-height: 270px; }
+  .slider .prev {
+    width: 41px;
+    height: 41px;
+    display: block;
+    position: absolute;
+    z-index: 20;
+    color: transparent;
+    top: 40%;
+    right: -125px;
+    cursor: pointer;
+    padding: 0;
+    right: 50px; }
+    .slider .prev:before {
+      font-size: 20px;
+      color: #00a1eb;
+      font-family: 'icomoon' !important;
+      line-height: 1;
+      font-weight: normal;
+      content: '\e900';
+      position: absolute;
+      top: 40%;
+      right: -125px;
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+      border: 1px solid #00a1eb;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .slider .next {
+    width: 41px;
+    height: 41px;
+    display: block;
+    position: absolute;
+    z-index: 20;
+    color: transparent;
+    top: 40%;
+    left: -30px;
+    cursor: pointer;
+    padding: 0;
+    right: 50px; }
+    .slider .next:before {
+      font-size: 20px;
+      color: #00a1eb;
+      font-family: 'icomoon' !important;
+      line-height: 1;
+      font-weight: normal;
+      content: '\e901';
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+      border: 1px solid #00a1eb;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .slider .card {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 270px;
+    height: 270px;
+    margin: 0 10px;
+    z-index: -10; }
+    .slider .card-hover {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+    .slider .card:hover {
+      z-index: 10;
+      border-bottom: 4px solid #ebebeb; }
+      .slider .card:hover img.card-image-normal {
+        display: none; }
+      .slider .card:hover img.card-image-hover,
+      .slider .card:hover .card-hover {
+        display: block; }
+      .slider .card:hover .card-add {
+        padding: 3px;
+        color: green;
+        border: 1px solid grey; }
+      .slider .card:hover .card-heading {
+        color: yellow; }
+    .slider .card-pstrag {
+      max-width: 270px; }
+    .slider .card-heading {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center; }
+    .slider .card-price {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center; }
+    .slider .card-heading-hover {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center; }
+    .slider .card-price-hover {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center; }
+    .slider .card .dorada-heading {
+      position: absolute;
+      top: 125px;
+      left: 18%; }
+      .slider .card .dorada-heading-hover {
+        position: absolute;
+        top: 95px;
+        left: 18%; }
+    .slider .card .dorada-price {
+      position: absolute;
+      top: 150px;
+      left: 26%; }
+      .slider .card .dorada-price-hover {
+        position: absolute;
+        top: 125px;
+        left: 26%; }
+    .slider .card .pstrag-heading {
+      position: absolute;
+      top: 125px;
+      left: 7%; }
+      .slider .card .pstrag-heading-hover {
+        position: absolute;
+        top: 95px;
+        left: 7%; }
+    .slider .card .pstrag-price {
+      position: absolute;
+      top: 150px;
+      left: 26%; }
+      .slider .card .pstrag-price-hover {
+        position: absolute;
+        top: 125px;
+        left: 26%; }
+    .slider .card img.card-image-hover {
+      display: none; }

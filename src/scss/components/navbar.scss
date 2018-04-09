@@ -1,0 +1,114 @@
+ $navbar-breakpoint: 992px;
+
+ .navbar {
+     overflow: hidden;
+
+
+     &-brand {
+         float: left;
+         margin-top: 55px;
+         padding-bottom: 3px;
+         border-bottom: 1px solid transparent;
+@media screen and( max-width: 360px) {
+                 width: 60%;
+             }
+         &:hover {
+             padding-bottom: 3px;
+             border-bottom: 1px solid #fff;
+         }
+         img {
+             display: block;
+             width: 100%;
+             height: auto;
+             
+         }
+     }
+     &-nav {
+         float: right;
+         list-style: none;
+         margin: 0;
+         padding-left: 0;
+         margin-top: 42px;
+     }
+     &__item {
+         display: inline-block;
+         padding-left: 20px;
+         @media screen and( max-width: 910px) {
+             margin-bottom: 10px;
+         }
+     }
+     &_link {
+         position: relative;
+         font-family: $global-font-family;
+         font-size: 14px;
+         font-weight: 700;
+         text-transform: uppercase;
+         color: #fff;
+         text-decoration: none;
+         padding-bottom: 2px;
+         &:hover {
+             color: #fff;
+             text-decoration: none;
+             border-bottom: 1px solid #fff;
+         }
+     }
+     .btn-border {
+        font-family: $global-font-family;
+         font-size: 14px;
+         font-weight: 700;
+         text-transform: uppercase;
+         color: #fff;
+         text-decoration: none;;
+         &:hover {
+             text-decoration: none;
+             border-bottom: 1px solid #fff;
+         }
+     }
+     &-toggler {
+         display: block;
+         padding: 7px 5px 5px;
+         border: 3px solid $primary-color;
+         border-radius: 2px;
+         max-width: 46px;
+         max-height: 35px;
+         float: right;
+         margin-top: 47px;
+         margin-right: 20px;
+         .ico-bar {
+             display: block;
+             width: 30px;
+             border-top: 3px solid $primary-color;
+             height: 3px;
+             margin-bottom: 4px;
+             &:last-child {
+                 margin-bottom: 0;
+             }
+         }
+         @media all and (min-width: $navbar-breakpoint) {
+             display: none;
+         }
+     }
+     &-collapse {
+         &.collapse {
+             display: block;
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             .navbar-nav {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+             }
+             @media all and (min-width: $navbar-breakpoint) {
+                 display: flex;
+                 .navbar-nav {
+                     flex-direction: row;
+                 }
+             }
+         }
+         @media all and (max-width: ($navbar-breakpoint - 1px)) {
+             display: none;
+         }
+     }
+ }

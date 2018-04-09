@@ -1,0 +1,93 @@
+ //$button-color:       #fff;
+ //$button-background:  #00a1eb ;
+ //$button-border:      1px solid #ccc;
+ //$button-padding:     5px 10px;
+ //$button-font-size:   14px;
+ //$button-font-weight: normal;
+ .button {
+     margin: 0;
+     font: inherit;
+     cursor: pointer;
+     text-align: center;
+     text-transform: none;
+     text-decoration: none;
+     user-select: none;
+     display: inline-block;
+     padding: $button-padding;
+     color: $button-color;
+     border: none;
+     font-size: $button-font-size;
+     font-weight: $button-font-weight;
+     background: $button-background;
+     &-up {
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        bottom: 111px;
+        right: 29px;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #fff;
+        z-index: 100;
+        outline-color: transparent;
+        border-radius: 5px;
+
+
+        &-icon {
+            margin-left: -5px;
+            -moz-transform: rotate(90deg);
+            /* Для Firefox */
+            -ms-transform: rotate(90deg);
+            /* Для IE */
+            -webkit-transform: rotate(90deg);
+            /* Для Safari, Chrome, iOS */
+            -o-transform: rotate(90deg);
+            /* Для Opera */
+            transform: rotate(90deg);
+        }
+    }
+     &:hover {
+         color: #fff;
+     }
+     &:focus {}
+     &:active,
+     &.is-active {}
+
+     &_extra-small {
+         margin-left: 13px;
+
+         border-radius: $button-border-radius;
+     }
+     &__center {
+         display: flex;
+         justify-content: center;
+         padding: 65px 0 92px;
+         @media screen and(max-width: 768px) {
+              padding: 35px 0 32px;
+         }
+     }
+     &_white {
+         background-color: #fff;
+         color: $primary-color;
+         font-family: $global-font-family;
+         font-size: 14px;
+         font-weight: 700;
+         line-height: 15.01px;
+         text-transform: uppercase;
+         padding: 17px 25px;
+         cursor: pointer;
+         &:hover{
+            color:$global-color;
+         }
+     }
+     &-card {
+         position: absolute;
+         top: 175px;
+         left: 26%;
+         cursor: pointer;
+         &:hover {
+         color: $primary-color;
+     }
+     }
+ }

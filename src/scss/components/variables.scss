@@ -1,0 +1,38 @@
+$global-primary-background:    #00a1eb;
+$global-secondary-background:  #222;
+
+
+
+$global-font-family:           'Montserrat', sans-serif;
+$second-font-family:           'Hind', sans-serif;
+$global-font-size:             16px;
+$global-line-height:           1.46;
+
+$global-color:                 #737373;
+$primary-color:                #00a1eb;
+$global-link-color:            $global-primary-background;
+$global-link-hover-color:      lighten($global-primary-background, 10%);
+
+
+$container-width:              1200px;
+$container-padding:            0 10px;
+
+
+$button-color:                 #fff;
+$button-background:            #00a1eb;
+$button-border:                1px solid #ccc;
+$button-border-radius:         3px;
+$button-padding:               10px 15px;
+$button-font-size:                14px;
+$button-font-weight:           normal;
+
+
+$form-color:                   #000;
+$form-background:              #fff;
+$form-border:                  1px solid #ccc;
+$form-height:                  40px;
+$form-size:                    1rem;
+$form-group-margin:            1rem;
+$form-padding:                 5px 10px;
+
+$navbar-breakpoint:            768px;

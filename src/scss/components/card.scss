@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    position: relative;
+    &-header {}
+    &-body {}
+    &-footer {}
+    &-heading {}
+    &-description {}
+    &-image {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

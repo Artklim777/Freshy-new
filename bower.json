@@ -1,0 +1,25 @@
+{
+  "name": "Freshy",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "artklim <artklim777@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "slick-carousel": "^1.8.1",
+    "bootstrap": "3.3.7",
+    "normalize-css": "^8.0.0"
+  }
+}

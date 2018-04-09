@@ -1,0 +1,55 @@
+// $form-color:          #000;
+// $form-background:     #fff;
+// $form-border:         1px solid #ccc;
+// $form-height:         40px;
+// $form-size:           1rem;
+// $form-group-margin:   1rem;
+// $form-padding:        5px 10px;
+
+
+.form {
+	&-group {
+		margin-bottom: $form-group-margin;
+		
+	}
+	&-control {
+		margin: 0;
+    	border-radius: 0;
+    	font: inherit;
+		display: block;
+		width: 100%;
+		height: $form-height;
+		padding: $form-padding;
+		background-color: $form-background;
+		border: $form-border;
+		color: $form-color;
+		
+		&:focus {
+			
+		}
+		&::placeholder {
+		
+		}
+	}
+	&-select {
+		
+	}
+	&-radio {
+		;
+	}
+	&-checkbox {
+		
+	}
+	&-file {
+	
+	}
+	
+}
+
+textarea.form-control {
+	height: auto;
+	resize: vertical;
+}
+
+
+

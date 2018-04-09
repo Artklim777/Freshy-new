@@ -1,0 +1,202 @@
+       .slider-header{
+display: flex;
+        flex-direction: column;
+        justify-content: center;
+       }
+        .slider {
+            max-height: 270px;
+            padding: 15px 0;
+            .slick-slide {
+                min-width: 270px;
+            }
+            .slick-list{
+                max-height: 270px;
+            }
+            .prev {
+                width: 41px;
+                height: 41px;
+                display: block;
+                position: absolute;
+                z-index: 20;
+                color: transparent;
+                top: 40%;
+                right: -125px;
+                cursor: pointer;
+                padding: 0;
+                right: 50px;
+
+                &:before {
+                    font-size: 20px;
+                    color: $primary-color;
+                    font-family: 'icomoon' !important;
+                    line-height: 1;
+                    font-weight: normal;
+                    content: '\e902';
+                    position: absolute;
+                    top: 40%;
+                    right: -125px;
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    border: 1px solid $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .next {
+                width: 41px;
+                height: 41px;
+                display: block;
+                position: absolute;
+                z-index: 20;
+                color: transparent;
+
+                top: 40%;
+                left: -30px;
+                cursor: pointer;
+                padding: 0;
+                right: 50px;
+
+                &:before {
+                    font-size: 20px;
+                    color: $primary-color;
+                    font-family: 'icomoon' !important;
+                    line-height: 1;
+                    font-weight: normal;
+                    content: '\e901';
+                    position: absolute;
+                    top: 50%;
+                    left: -30px;
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    border: 1px solid $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .card {
+                margin: 0 auto;
+                display: block;
+                position: relative;
+                width: 270px;
+                height: 270px;
+                margin: 0 10px;
+                z-index: -10;
+                &-hover {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                }
+                &:hover {
+                    z-index: 10;
+
+                    border-bottom: 4px solid #ebebeb;
+                    img.card-image-normal {
+                        display: none;
+                    }
+                    img.card-image-hover,
+                    .card-hover {
+                        display: block;
+                    }
+                    .card-add {
+                        padding: 3px;
+                        color: green;
+                        border: 1px solid grey;
+                    }
+                    .card-heading {
+
+                        color: yellow;
+                    }
+                }
+                &-pstrag {
+                    max-width: 270px;
+                }
+                &-heading {
+                    color: #ffffff;
+                    font-family: $global-font-family;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                &-price {
+
+                    color: #ffffff;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                &-heading-hover {
+
+                    color: #ffffff;
+                    font-family: $global-font-family;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                &-price-hover {
+
+                    color: #ffffff;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .dorada-heading {
+                    position: absolute;
+                    top: 125px;
+                    left: 18%;
+
+                    &-hover {
+
+                        position: absolute;
+                        top: 95px;
+                        left: 18%;
+                    }
+                }
+                .dorada-price {
+                    position: absolute;
+                    top: 150px;
+                    left: 26%;
+                    &-hover {
+                        position: absolute;
+                        top: 125px;
+                        left: 26%;
+                    }
+                }
+                .pstrag-heading {
+                    position: absolute;
+                    top: 125px;
+                    left: 7%;
+                    &-hover {
+                        position: absolute;
+                        top: 95px;
+                        left: 7%;
+                    }
+                }
+                .pstrag-price {
+                    position: absolute;
+                    top: 150px;
+                    left: 26%;
+                    &-hover {
+                        position: absolute;
+                        top: 125px;
+                        left: 26%;
+                    }
+                }
+                img.card-image-hover {
+                    display: none;
+                }
+            }
+        }
